@@ -42,10 +42,7 @@ Network Segmentation 3 VLANs with separate subnets
 
 ipconfig /all 
 
-
-
-<!-- Start of picture text -->
-ae ye ve ee Yo ee (Preferred)<br>Lease Obtained. ....... .. . : Saturday, November 21, 2026 2:42:14 PM<br>Lease Expires ........ . . : Sunday, November 22, 2026 1:21:22 PM<br>DHCPV6 IAID . . . . »- »+ + + » « + : 347874321<br>DHCPv6 Client DUID. .... . . . : @@-@1-00-01-32-8D-54-7A-BC-24-11-8B-9B-7E<br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/testingDHCPVLAN101.png)
 
 ipconfig /release 
 
