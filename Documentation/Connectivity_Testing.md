@@ -84,7 +84,7 @@ WinServer – ping 10.0.30.1
 
 # **Command:** 
 
-Win10Client - nslookup www.facebook.com 
+Win10Client - nslookup `www.facebook.com` 
 
 
 
