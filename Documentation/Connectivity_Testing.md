@@ -88,16 +88,13 @@ Win10Client - nslookup www<span>.</span>facebook.com
 
 ![](../screenshots/Connectivity_Testing_Images/DNSWin10.png)
 
-# UbuntuServer - nslookup `www.facebook.com` 10.0.30.5 
+# UbuntuServer - nslookup www<span>.</span>facebook.com 10.0.30.5 
 
 ![](../screenshots/Connectivity_Testing_Images/DNSUbuntu.png)
 
-WinServer- nslookup www.facebook.com 
+WinServer- nslookup www<span>.</span>facebook.com 
 
-
-
-<!-- Start of picture text -->
-C:\Users\Administrator>nsLookup www.facebook.com<br>Server: localhost<br>Address:<br>Non-authoritative answer:<br>Name : star-mini.clOr. facebook. com<br>Addresses: 2a03:2880:f162:81:face:b00c:0:25de<br>Aliases: www.facebook.com<br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/DNSWinserver.png)
 
 **Expected Result:** The DNS server returns the correct IP address of www.facebook.com **Actual Result:** DNS successfully returned correct IP address for www.facebook.com 
 
