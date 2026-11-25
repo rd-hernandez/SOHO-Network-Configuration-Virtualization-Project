@@ -44,13 +44,19 @@ ipconfig /all
 
 ![](../screenshots/Connectivity_Testing_Images/testingDHCPVLAN101.png)
 
+
+
 ipconfig /release 
 
 ![](../screenshots/Connectivity_Testing_Images/testingDHCPVLAN102.png)
 
+
+
 ipconfig /renew 
 
 ![](../screenshots/Connectivity_Testing_Images/testingDHCPVLAN103.png)
+
+
 
 **Expected Result:** The client receives an IP address, subnet mask, default gateway, and DNS server from the configured DHCP settings. 
 
@@ -66,13 +72,19 @@ Win10Client - ping 10.0.10.1
 
 ![](../screenshots/Connectivity_Testing_Images/defaultGatewayWin10.png)
 
+
+
 UbuntuServer – ping 10.0.20.1 
 
 ![](../screenshots/Connectivity_Testing_Images/defaultGatewayUbuntu.png)
 
+
+
 WinServer – ping 10.0.30.1 
 
 ![](../screenshots/Connectivity_Testing_Images/defaultGatewayWinserver.png)
+
+
 
 **Expected Result:** Successful replies from the pfSense interface assigned to the client's VLAN. 
 
@@ -88,13 +100,19 @@ Win10Client - nslookup www<span>.</span>facebook.com
 
 ![](../screenshots/Connectivity_Testing_Images/DNSWin10.png)
 
+
+
 UbuntuServer - nslookup www<span>.</span>facebook.com 10.0.30.5 
 
 ![](../screenshots/Connectivity_Testing_Images/DNSUbuntu.png)
 
+
+
 WinServer- nslookup www<span>.</span>facebook.com 
 
 ![](../screenshots/Connectivity_Testing_Images/DNSWinserver.png)
+
+
 
 **Expected Result:** The DNS server returns the correct IP address of www<span>.</span>facebook.com 
 
@@ -112,11 +130,15 @@ Win10Client – ping 10.0.20.2
 
 ![](../screenshots/Connectivity_Testing_Images/firewallValidationWin10.png)
 
+
+
 Ping to SERVERS subnet successfully blocked. 
 
 ping 10.0.30.5 
 
 ![](../screenshots/Connectivity_Testing_Images/firewallValidationWin101.png)
+
+
 
 Ping to MANAGEMENT subnet successfully blocked. 
 
@@ -124,11 +146,15 @@ UbuntuServer – ping -c 4 10.0.10.2
 
 ![](../screenshots/Connectivity_Testing_Images/firewallValidationUbu.png)
 
+
+
 Ping to EMPLOYEES subnet successfully blocked. 
 
 ping -c 4 10.0.30.5 
 
 ![](../screenshots/Connectivity_Testing_Images/firewallValidationUbu1.png)
+
+
 
 Ping to MANAGEMENT subnet successfully blocked. 
 
@@ -136,32 +162,35 @@ WinServer – ping 10.0.10.2
 
 ![](../screenshots/Connectivity_Testing_Images/firewallValidationWinserver.png)
 
+
+
 Ping to EMPLOYEES subnet successfully blocked. 
 
 ping 10.0.20.2 
 
 ![](../screenshots/Connectivity_Testing_Images/firewallValidationWinserver1.png)
 
+
+
+Ping to SERVERS subnet successfully blocked.
+
 2. Review pfSense firewall rules to confirm that traffic is being denied according to the configured rules. 
 
-
-
-<!-- Start of picture text -->
-Floating WAN LAN EMPLOYEES SERVERS.» MANAGEMENT<br>Rules (Drag to Change Order) rh<br>o States Protocol Source Port Destination Port Gateway Queue Schedule Description Actions:<br>Y 0/43Ki8 iPr EMPLOYEES + MANAGEMENT «53. * none Allow egress ONS traffic to L709<br>TCP/UDP subnets subnets (0Ns) MANAGMENT subnet ax<br>% o7eKie = IPva* EMPLOYEES * MANAGEMENT e ® none, Block egress traffic to £709<br>subnets subnets MANAGEMENT subnet o<br>% o/ssoB iva EMPLOYEES * SERVERS subnets * . none Block egress traffic to SERVERS £709<br>subnets subnet a<br>Y 6217.41 pvae EMPLOYEES ‘oe . " none L709<br>MiB subnets ax<br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/firewallRulesVLAN10.png)
 
 Allow DNS from MANAGEMENT subnet and blocks all other egress traffic. 
 
 
 
-<!-- Start of picture text -->
-Floating WAN LAN-—sEMPLOYEES SERVERS» MANAGEMENT<br>Rules (Drag to Change Order)<br>o States Protocol Source Port Destination Port Gateway Queue Schedule Description Actions<br>VY onkiB  Pv4 SERVERS * MANAGEMENT 53 F one Allow DNS traffic from MANAGEMENT & OQ<br>ToP/UDP subnets subnets (ONs) subnet Gx<br>% 0/3KiB  Pvae ‘SERVERS * MANAGEMENT * * none Block egress traffic from £709<br>subnets subnets MANAGEMNET subnet a<br>% 0/2KiB —IPvae SERVERS * EMPLOYEES subnets * . none Block egress traffictoemPLovesSs BAOQ<br>subnets subnet a<br>Y 0/208 Pv4e SERVERS * 8 . . one L709<br>MiB subnets Gx<br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/firewallRulesVLAN20.png)
 
 Allow DNS from MANAGEMENT subnet and blocks all other egress traffic. 
 
 
 
-<!-- Start of picture text -->
-Floating WAN LAN-—EMPLOYEES = SERVERS.» MANAGEMENT<br>Rules (Drag to Change Order)<br>is} States Protocol Source Port Destination Port Gateway Queue Schedule Description Actions:<br>% 0/2408 IPv4* MANAGEMENT + SERVERSsubnets * * none Block egress traffic to SERVERS £7008<br>subnets subnet<br>% 0/2408 IPv4* MANAGEMENT * EMPLOYEES ‘+ none Block egress tratfictoempLovees SOOT<br>subnets subnets subnet<br>Y 3/943 IPva* MANAGEMENT so oa none £7008<br>mis subnets x<br><!-- End of picture text -->
+
+
+![](../screenshots/Connectivity_Testing_Images/firewallRulesVLAN30.png)
 
 Block all egress traffic to other subnets. 
 
