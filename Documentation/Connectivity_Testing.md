@@ -42,14 +42,12 @@ Network Segmentation 3 VLANs with separate subnets
 
 ipconfig /all 
 
-![ipconfig /all](../screenshots/Connectivity_Testing_Images/testingDHCPVLAN101.png)
-
+![](../screenshots/Connectivity_Testing_Images/testingDHCPVLAN101.png)
 
 
 ipconfig /release 
 
 ![](../screenshots/Connectivity_Testing_Images/testingDHCPVLAN102.png)
-
 
 
 ipconfig /renew 
@@ -73,11 +71,9 @@ Win10Client - ping 10.0.10.1
 ![](../screenshots/Connectivity_Testing_Images/defaultGatewayWin10.png)
 
 
-
 UbuntuServer – ping 10.0.20.1 
 
 ![](../screenshots/Connectivity_Testing_Images/defaultGatewayUbuntu.png)
-
 
 
 WinServer – ping 10.0.30.1 
@@ -85,10 +81,9 @@ WinServer – ping 10.0.30.1
 ![](../screenshots/Connectivity_Testing_Images/defaultGatewayWinserver.png)
 
 
-
 **Expected Result:** Successful replies from the pfSense interface assigned to the client's VLAN. 
 
-**Actual Result:** Every client is able to successfully ping their respective VLAN interfaces. 
+**Actual Result:** Every client can successfully ping its respective VLAN interface. 
 
 # **3. DNS Resolution** 
 
@@ -101,17 +96,14 @@ Win10Client - nslookup www<span>.</span>facebook.com
 ![](../screenshots/Connectivity_Testing_Images/DNSWin10.png)
 
 
-
 UbuntuServer - nslookup www<span>.</span>facebook.com 10.0.30.5 
 
 ![](../screenshots/Connectivity_Testing_Images/DNSUbuntu.png)
 
 
-
 WinServer- nslookup www<span>.</span>facebook.com 
 
 ![](../screenshots/Connectivity_Testing_Images/DNSWinserver.png)
-
 
 
 **Expected Result:** The DNS server returns the correct IP address of www<span>.</span>facebook.com 
@@ -131,13 +123,11 @@ Win10Client – ping 10.0.20.2
 ![](../screenshots/Connectivity_Testing_Images/firewallValidationWin10.png)
 
 
-
 Ping to SERVERS subnet successfully blocked. 
 
 ping 10.0.30.5 
 
 ![](../screenshots/Connectivity_Testing_Images/firewallValidationWin101.png)
-
 
 
 Ping to MANAGEMENT subnet successfully blocked. 
@@ -147,13 +137,11 @@ UbuntuServer – ping -c 4 10.0.10.2
 ![](../screenshots/Connectivity_Testing_Images/firewallValidationUbu.png)
 
 
-
 Ping to EMPLOYEES subnet successfully blocked. 
 
 ping -c 4 10.0.30.5 
 
 ![](../screenshots/Connectivity_Testing_Images/firewallValidationUbu1.png)
-
 
 
 Ping to MANAGEMENT subnet successfully blocked. 
@@ -163,19 +151,17 @@ WinServer – ping 10.0.10.2
 ![](../screenshots/Connectivity_Testing_Images/firewallValidationWinserver.png)
 
 
-
 Ping to EMPLOYEES subnet successfully blocked. 
 
 ping 10.0.20.2 
 
-![Ping to SERVERS subnet successfully blocked.](../screenshots/Connectivity_Testing_Images/firewallValidationWinserver1.png)
+![](../screenshots/Connectivity_Testing_Images/firewallValidationWinserver1.png)
 
 2. Review pfSense firewall rules to confirm that traffic is being denied according to the configured rules. 
 
 ![](../screenshots/Connectivity_Testing_Images/firewallRulesVLAN10.png)
 
 Allow DNS from MANAGEMENT subnet and blocks all other egress traffic. 
-
 
 
 ![](../screenshots/Connectivity_Testing_Images/firewallRulesVLAN20.png)
@@ -185,12 +171,11 @@ Allow DNS from MANAGEMENT subnet and blocks all other egress traffic.
 
 
 
-
 ![](../screenshots/Connectivity_Testing_Images/firewallRulesVLAN30.png)
 
 Block all egress traffic to other subnets. 
 
-**Expected Result:** Restricted traffic is blocked according to the configured firewall rules. **Actual Result:** All firewall rules restrict traffic successfully. 
+**Expected Result:** Restricted traffic is blocked according to the configured firewall rules. **Actual Result:** All firewall rules successfully restrict traffic. 
 
 **Conclusion** 
 
