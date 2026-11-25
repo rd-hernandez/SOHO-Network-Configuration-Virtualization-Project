@@ -10,13 +10,13 @@ pfSense was configured as the network's router and Firewall. Firewall rules were
 
 - Build a virtualized SOHO network using Proxmox. 
 
-- Configure pfSense for routing, DHCP, and firewall services. 
+- Configure pfSense for routing and firewall services. 
 
 - Implement VLANs and subnetting for network segmentation. 
 
 - Restrict inter-VLAN communication using firewall rules. 
 
-- Configure Windows Server as a DNS server. 
+- Configure Windows Server as a DNS and DHCP server. 
 
 - Verify network connectivity and firewall functionality. 
 
