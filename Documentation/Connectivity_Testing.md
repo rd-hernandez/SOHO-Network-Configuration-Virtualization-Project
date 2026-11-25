@@ -42,17 +42,11 @@ Network Segmentation 3 VLANs with separate subnets
 
 ipconfig /all 
 
-
-
-<!-- Start of picture text -->
-ae ye ve ee Yo ee (Preferred)<br>Lease Obtained. ....... .. . : Saturday, November 21, 2026 2:42:14 PM<br>Lease Expires ........ . . : Sunday, November 22, 2026 1:21:22 PM<br>DHCPV6 IAID . . . . »- »+ + + » « + : 347874321<br>DHCPv6 Client DUID. .... . . . : @@-@1-00-01-32-8D-54-7A-BC-24-11-8B-9B-7E<br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/testingDHCPVLAN101)
 
 ipconfig /release 
 
-
-
-<!-- Start of picture text -->
-Ethernet adapter Ethernet:<br>Connection-specific DNS Suffix .:<br>Link-local IPv6 Address... . . : fe80::520b:d3ee:348f:c34c%11<br>Default: Gateway... 1.) 2c) ies te<br>Cc: \Users\John><br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/testingDHCPVLAN102)
 
 ipconfig /renew 
 
