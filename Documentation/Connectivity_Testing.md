@@ -168,11 +168,7 @@ Ping to EMPLOYEES subnet successfully blocked.
 
 ping 10.0.20.2 
 
-![](../screenshots/Connectivity_Testing_Images/firewallValidationWinserver1.png)
-
-
-
-Ping to SERVERS subnet successfully blocked.
+![Ping to SERVERS subnet successfully blocked.](../screenshots/Connectivity_Testing_Images/firewallValidationWinserver1.png)
 
 2. Review pfSense firewall rules to confirm that traffic is being denied according to the configured rules. 
 
