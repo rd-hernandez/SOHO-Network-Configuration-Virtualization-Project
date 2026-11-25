@@ -42,7 +42,7 @@ Network Segmentation 3 VLANs with separate subnets
 
 ipconfig /all 
 
-![yes](../screenshots/Connectivity_Testing_Images/testingDHCPVLAN101.png)
+![](./screenshots/Connectivity_Testing_Images/testingDHCPVLAN101.png)
 
 ipconfig /release 
 
