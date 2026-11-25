@@ -18,6 +18,8 @@ pfSense handles network routing and firewall policies, while Windows Server prov
 
 # **Network Diagram:** 
 
+![](../Diagrams/SOHOnetwork.drawio.png)
+
 # **Network Components** 
 
 **Component Purpose** Proxmox VE Hypervisor used to host virtual machines pfSense Virtual router and firewall 
