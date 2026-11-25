@@ -97,6 +97,7 @@ WinServer- nslookup www<span>.</span>facebook.com
 ![](../screenshots/Connectivity_Testing_Images/DNSWinserver.png)
 
 **Expected Result:** The DNS server returns the correct IP address of www<span>.</span>facebook.com 
+
 **Actual Result:** DNS successfully returned correct IP address for www<span>.</span>facebook.com 
 
 # **5. Firewall Rule Validation** 
