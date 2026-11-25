@@ -50,10 +50,7 @@ ipconfig /release
 
 ipconfig /renew 
 
-
-
-<!-- Start of picture text -->
-C:\Users\John>ipconfig /renew<br>Windows IP Configuration<br>Ethernet adapter Ethernet:<br>Connection-specific DNS Suffix . : SoHo.local<br>C:\Users\John>,,<br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/testingDHCPVLAN103.png)
 
 **Expected Result:** The client receives an IP address, subnet mask, default gateway, and DNS server from the configured DHCP settings. 
 
@@ -67,24 +64,15 @@ C:\Users\John>ipconfig /renew<br>Windows IP Configuration<br>Ethernet adapter Et
 
 Win10Client - ping 10.0.10.1 
 
-
-
-<!-- Start of picture text -->
-C:\Users\John>ping 10.0.10.1<br>Pinging 10.0.10.1 with 32 bytes of data:<br>Reply from 10.0.10.1: bytes=32 time<ims TTL=64<br>Reply from 10.0.10.1: bytes=32 time<ims TTL=64<br>Reply from 10.0.10.1: bytes=32 time<ims TTL=64<br>Reply from 10.0.10.1: bytes=32 time<ims TTL=64<br>Ping statistics for 10.0.10.1<br>Packets: Sent = 4, Received = 4, Lost = @ (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = @ms, Maximum = Oms, Average = Oms<br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/defaultGatewayWin10.png)
 
 UbuntuServer – ping 10.0.20.1 
 
-
-
-<!-- Start of picture text -->
-ubu@servers:~$ ping 10.0.20.1<br>PING 10.0.20.1 (10.0.20.1) 56(84) bytes of data.<br>64 bytes from 10.0.20.1: icmp_seq=1 tt1=64 time=@.159 m:<br>64 bytes from 10.0.20.1: icmp_seq=2 tt1l=64 time=0.162 ms<br>64 bytes from 10.0.20.1: icmp_seq=3 tt1l=64 time=0.145 ms<br>64 bytes from 10.0.20.1: icmp_seq=4 tt1l=64 time=@.184 ms<br>10.8.28.1 ping statisti<br>4 packets transmitted, 4 received, 0% packet loss, time 3123ms<br>rtt min/avg/max/mdev = @.145/0.162/0.184/0.014 ms<br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/defaultGatewayUbuntu.png)
 
 WinServer – ping 10.0.30.1 
 
-
-
-<!-- Start of picture text -->
-C:\Users\Administrator>ping 10.0.30.1<br>Pinging 10.0.30.1 with 32 bytes of data:<br>Reply from 10.0.30.1: bytes=32 time<lms TTL=64<br>Reply from 10.0.30.1: bytes=32 time<lms TTL=64<br>Reply from 10.0.30.1: bytes=32 time<lms TTL=64<br>Reply from 10.0.30.1: bytes=32 time<lms TTL=64<br>Ping statistics for 10.0.30.1:<br>Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = Oms, Maximum = Oms, Average = Oms<br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/defaultGatewayWinserver.png)
 
 **Expected Result:** Successful replies from the pfSense interface assigned to the client's VLAN. 
 
