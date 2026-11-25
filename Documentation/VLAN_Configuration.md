@@ -40,19 +40,19 @@ Include a table describing each VLAN.
 
 Using pfSense, the EMPLOYEES interface is configured using a static IPv4 address of 10.0.10.1 
 
-# - <u>Proxmox configuration</u> 
+<u>Proxmox configuration -</u> 
 
 ![](../screenshots/VLAN_Configuration_Images/proxmoxVLAN10.png)
 
 Bridge vmbr1(LAN) is tagged with VLAN 10 Tag 
 
-# - <u>WinServer DHCP confgurationi</u> 
+<u>WinServer DHCP confguration -</u> 
 
 ![](../screenshots/VLAN_Configuration_Images/DHCPVLAN10.png)
 
 Windows Server DHCP scope for EMPLOYEES subnet is configured with a scope of 10.0.10.2 – 10.0.10.100 
 
-# - <u>DHCP Relay confgurationi</u> 
+<u>DHCP Relay confguration -</u> 
 
 ![](../screenshots/VLAN_Configuration_Images/DHCPRelayVLAN10.png)
 
@@ -70,13 +70,13 @@ Windows Server DHCP scope for EMPLOYEES subnet is configured with a scope of 10.
 
 # **Configuration Details:** 
 
-- <u>pfSense</u> 
+<u>pfSense</u> 
 
 ![](../screenshots/VLAN_Configuration_Images/pfSenseVLAN20.png)
 
 Using pfSense, the SERVERS interface is configured with a static IPv4 address of 10.0.20.1 
 
-# - <u>Proxmox configuration</u> 
+<u>Proxmox configuration -</u> 
 
 ![](../screenshots/VLAN_Configuration_Images/proxmoxVLAN10.png)
 
@@ -96,13 +96,13 @@ Bridge vmbr1(LAN) is tagged with VLAN 20 Tag
 
 # **Configuration Details:** 
 
-- <u>pfSense</u> 
+<u>pfSense -</u> 
 
 ![](../screenshots/VLAN_Configuration_Images/pfSenseVLAN30.png)
 
 Using pfSense, the MANAGEMENT interface is configured with a static IPv4 address of 10.0.30.1 
 
-- <u>Proxmox configuration</u> 
+<u>Proxmox configuration -</u> 
 
 ![](../screenshots/VLAN_Configuration_Images/proxmoxVLAN30.png)
 
