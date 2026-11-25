@@ -86,17 +86,11 @@ WinServer – ping 10.0.30.1
 
 Win10Client - nslookup `www.facebook.com` 
 
+![](../screenshots/Connectivity_Testing_Images/DNSWin10.png)
 
+# UbuntuServer - nslookup `www.facebook.com` 10.0.30.5 
 
-<!-- Start of picture text -->
-IC: \Users\John>nslookup www.facebook.com<br>Server inKnown<br>Non-authoritative answer:<br>Name: star-mini.c1@r. facebook. com<br>Addresse 2a03 : 2880: £162:81: face: b00c:0:25de<br>Aliases: _www.facebook.com<br><!-- End of picture text -->
-
-# UbuntuServer - nslookup www.facebook.com 10.0.30.5 
-
-
-
-<!-- Start of picture text -->
-ibu@servers:~$ nslookup www.facebook.com 10.0.30.5<br>server:<br>Address: 10.0.36.5#53<br>Non-authoritative answer:<br>www. facebook .com canonical name = star-mini<br>Name: star-mini.c1@r.facebook.con<br>Address:<br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/DNSUbuntu.png)
 
 WinServer- nslookup www.facebook.com 
 
