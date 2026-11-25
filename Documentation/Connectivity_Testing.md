@@ -88,7 +88,7 @@ Win10Client - nslookup www<span>.</span>facebook.com
 
 ![](../screenshots/Connectivity_Testing_Images/DNSWin10.png)
 
-# UbuntuServer - nslookup www<span>.</span>facebook.com 10.0.30.5 
+UbuntuServer - nslookup www<span>.</span>facebook.com 10.0.30.5 
 
 ![](../screenshots/Connectivity_Testing_Images/DNSUbuntu.png)
 
@@ -96,7 +96,7 @@ WinServer- nslookup www<span>.</span>facebook.com
 
 ![](../screenshots/Connectivity_Testing_Images/DNSWinserver.png)
 
-**Expected Result:** The DNS server returns the correct IP address of www.facebook.com **Actual Result:** DNS successfully returned correct IP address for www.facebook.com 
+**Expected Result:** The DNS server returns the correct IP address of www<span>.</span>facebook.com **Actual Result:** DNS successfully returned correct IP address for www<span>.</span>facebook.com 
 
 # **5. Firewall Rule Validation** 
 
