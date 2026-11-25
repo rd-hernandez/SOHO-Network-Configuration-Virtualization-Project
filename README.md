@@ -40,7 +40,7 @@ pfSense was configured as the network's router and Firewall. Firewall rules were
 
 # **Network Topology** 
 
-See Network Design for more details. 
+![](./Diagrams/SOHOnetwork.drawio.png)
 
 # **Network Configuration** 
 
