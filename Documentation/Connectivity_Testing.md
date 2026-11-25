@@ -28,7 +28,7 @@ Network Segmentation 3 VLANs with separate subnets
 |DNS Resolution|Hostname resolves to IP|PASS|
 |Same-VLAN Connectivity|Devices can communicate|PASS|
 |Inter-VLAN Connectivity|Traffic is blocked|PASS|
-|Firewall Rule Validation|Rules enforce network isolatio|n PASS|
+|Firewall Rule Validation|Rules enforce network isolation| PASS|
 
 
 
