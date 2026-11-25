@@ -96,7 +96,8 @@ WinServer- nslookup www<span>.</span>facebook.com
 
 ![](../screenshots/Connectivity_Testing_Images/DNSWinserver.png)
 
-**Expected Result:** The DNS server returns the correct IP address of www<span>.</span>facebook.com **Actual Result:** DNS successfully returned correct IP address for www<span>.</span>facebook.com 
+**Expected Result:** The DNS server returns the correct IP address of www<span>.</span>facebook.com 
+**Actual Result:** DNS successfully returned correct IP address for www<span>.</span>facebook.com 
 
 # **5. Firewall Rule Validation** 
 
@@ -108,57 +109,39 @@ WinServer- nslookup www<span>.</span>facebook.com
 
 Win10Client – ping 10.0.20.2 
 
-
-
-<!-- Start of picture text -->
-Pinging 10.0.20.2 with 32 bytes of data<br>Request timed out.<br>Request timed out.<br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/firewallValidationWin10.png)
 
 Ping to SERVERS subnet successfully blocked. 
 
 ping 10.0.30.5 
 
-
-
-<!-- Start of picture text -->
-Request timed out.<br>Request timed out<br>Request timed out<br>Request timed out.<br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/firewallValidationWin101.png)
 
 Ping to MANAGEMENT subnet successfully blocked. 
 
 UbuntuServer – ping -c 4 10.0.10.2 
 
-
-
-<!-- Start of picture text -->
-buéservers:"$ ping -c 4<br>PING 16.0.10.2 (10.0.16.2) 56(84) byte if data<br>10.0.10.2 ping statistics<br>4 packets transmitted, @ received, » time 3058ms<br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/firewallValidationUbu.png)
 
 Ping to EMPLOYEES subnet successfully blocked. 
 
 ping -c 4 10.0.30.5 
 
-
-
-<!-- Start of picture text -->
-10.0.30.5 ping statistics<br>4 packets transmitted, @ received, » time 3106ms<br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/firewallValidationUbu1.png)
 
 Ping to MANAGEMENT subnet successfully blocked. 
 
 WinServer – ping 10.0.10.2 
 
-
-
-<!-- Start of picture text -->
-C:\Users\Administrator>ping<br>Pinging 10.0.10.2 with 32 bytes of data:<br>Request timed out.<br>Request timed out.<br>Request timed out.<br>Request timed out.<br>Ping statistics for 10.6.10.2:<br>Packets: Sent = 4, Received = 0, Lost = 4 ( yi<br><!-- End of picture text -->
+![](../screenshots/Connectivity_Testing_Images/firewallValidationWinserver.png)
 
 Ping to EMPLOYEES subnet successfully blocked. 
 
 ping 10.0.20.2 
 
+![](../screenshots/Connectivity_Testing_Images/firewallValidationWinserver1.png)
 
-
-<!-- Start of picture text -->
-C:\Users\Administrator>ping<br>Pinging 10.0.20.2 with 32 bytes of data:<br>Request timed out.<br>Request timed out.<br>Request timed out.<br>Request timed out.<br>Ping statistics for 10.0.20.2:<br>Packets: Sent = 4, Received = 0, Lost = 4 ( pie<br><!-- End of picture text -->
-
-2. Review pfSense firewall rules to confirm that traffic is being denied by the configured rules. 
+2. Review pfSense firewall rules to confirm that traffic is being denied according to the configured rules. 
 
 
 
