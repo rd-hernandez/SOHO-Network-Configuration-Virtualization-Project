@@ -34,7 +34,7 @@ Include a table describing each VLAN.
 
 # **Configuration Details:** 
 
-<u>pfSense -</u> 
+**<u>pfSense -</u>** 
 
 ![](../screenshots/VLAN_Configuration_Images/pfSenseVLAN10.png)
 
