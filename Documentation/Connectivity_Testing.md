@@ -116,7 +116,7 @@ WinServer- nslookup www<span>.</span>facebook.com
 
 **Procedure:** 
 
-1. Verify that restricted traffic is blocked. 
+**1. Verify that restricted traffic between subnets is blocked.** 
 
 Win10Client – ping 10.0.20.2 
 
@@ -157,7 +157,7 @@ ping 10.0.20.2
 
 ![](../screenshots/Connectivity_Testing_Images/firewallValidationWinserver1.png)
 
-2. Review pfSense firewall rules to confirm that traffic is being denied according to the configured rules. 
+**2. Review pfSense firewall rules to confirm that traffic is being denied according to the configured rules.** 
 
 ![](../screenshots/Connectivity_Testing_Images/firewallRulesVLAN10.png)
 
