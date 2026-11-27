@@ -38,7 +38,7 @@ Network Segmentation 3 VLANs with separate subnets
 
 **Objective:** Verify that pfSense assigns IP addresses to clients on VLAN 10 (Employees). 
 
-# Command:
+Command:
 
 ipconfig /all 
 
