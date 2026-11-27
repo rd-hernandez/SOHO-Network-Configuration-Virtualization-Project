@@ -64,7 +64,7 @@ ipconfig /renew
 
 **Objective:** Verify that clients can communicate with their configured default gateway. 
 
-# **Command:** 
+**Command:** 
 
 Win10Client - ping 10.0.10.1 
 
@@ -89,7 +89,7 @@ WinServer – ping 10.0.30.1
 
 **Objective:** Verify that Windows Server provides DNS resolution to network clients. 
 
-# **Command:** 
+**Command:** 
 
 Win10Client - nslookup www<span>.</span>facebook.com 
 
